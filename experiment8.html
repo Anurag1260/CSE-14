@@ -1,35 +1,75 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta charset="UTF-8"> 
-<title>Simple Navigation Menu</title> 
-<link rel="stylesheet" href="style2.css"> 
-</head> 
-<body> 
-<!-- Block Example --> 
-<header> 
-My <span>Website</span> Navigation 
-</header> 
-<!-- Inline-block Example --> 
-<nav class="inline-block-menu">
- <ul> 
-      <li><a href="#">Home</a></li> 
-      <li><a href="#">About</a></li> 
-      <li><a href="#">Services</a></li> 
-      <li><a href="#">Contact</a></li> 
-    </ul> 
-  </nav> 
- 
-  <!-- Float + Clear Example --> 
-  <nav class="float-menu"> 
-    <ul> 
-      <li><a href="#">Dashboard</a></li> 
-      <li><a href="#">Profile</a></li> 
-      <li><a href="#">Messages</a></li> 
-      <li><a href="#">Logout</a></li> 
-    </ul> 
-    <div class="clear"></div> 
-  </nav> 
- 
-</body> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Profiles</title>
+  <link rel="stylesheet" href="exp8.css">
+</head>
+<body>
+  <div class="frame" role="region" aria-label="Student profiles">
+    <div class="header">
+      
+    </div>
+
+    <div class="cards">
+      <!-- Card 1 -->
+      <article class="card" aria-label="Profile: Jeet Kumar">
+        <div class="avatar" aria-hidden="true">JK</div>
+        <div class="content">
+          <p class="name">Jeet Kumar</p>
+          <p class="program">B.Tech — CSE</p>
+          <div class="meta">
+            <div class="meta-row">
+              <span class="label">Roll No:</span>
+              <span>21CS1007</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Academic year:</span>
+              <span>1st Year</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card" aria-label="Profile: Asha Rani">
+        <div class="avatar" aria-hidden="true">AR</div>
+        <div class="content">
+          <p class="name">Asha Rani</p>
+          <p class="program">B.Tech — IT</p>
+          <div class="meta">
+            <div class="meta-row">
+              <span class="label">Roll No:</span>
+              <span>21IT1012</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Academic year:</span>
+              <span>1st Year</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card" aria-label="Profile: Rohit Kumar">
+        <div class="avatar" aria-hidden="true">RK</div>
+        <div class="content">
+          <p class="name">Rohit Kumar</p>
+          <p class="program">B.Tech — ECE</p>
+          <div class="meta">
+            <div class="meta-row">
+              <span class="label">Roll No:</span>
+              <span>21EC1009</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Academic year:</span>
+              <span>1st Year</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
 </html>
